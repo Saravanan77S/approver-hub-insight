@@ -1,7 +1,16 @@
 
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Users, FileText, AlertCircle, ChevronLeft, ChevronRight, Settings } from 'lucide-react';
+import { 
+  LayoutDashboard, 
+  Users, 
+  FileText, 
+  AlertCircle, 
+  ChevronLeft, 
+  ChevronRight, 
+  Settings, 
+  Briefcase 
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -13,6 +22,7 @@ const AdminSidebar: React.FC = () => {
     { name: 'User Approval', path: '/admin/users', icon: Users },
     { name: 'Complaints', path: '/admin/complaints', icon: AlertCircle },
     { name: 'Reports', path: '/admin/reports', icon: FileText },
+    { name: 'Manager Portal', path: '/admin/manager', icon: Briefcase },
     { name: 'Settings', path: '/admin/settings', icon: Settings },
   ];
 

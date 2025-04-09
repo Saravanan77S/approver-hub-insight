@@ -7,6 +7,7 @@ import Users from './Users';
 import Complaints from './Complaints';
 import Reports from './Reports';
 import Settings from './Settings';
+import Manager from './Manager';
 
 const AdminRoutes: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const AdminRoutes: React.FC = () => {
         <Route path="/users" element={<Users />} />
         <Route path="/complaints" element={<Complaints />} />
         <Route path="/reports" element={<Reports />} />
+        <Route path="/manager" element={<Manager />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </AdminLayout>
